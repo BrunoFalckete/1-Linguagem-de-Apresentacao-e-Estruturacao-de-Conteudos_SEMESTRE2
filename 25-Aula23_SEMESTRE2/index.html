@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercicios</title>
+        <link rel="stylesheet" href="./styles.css"/>
+        <script type="text/javascript" src="./functions.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navcontainer">
+                <div class="sidenav">
+                    <a href="javascript:void(0);" class="icon" onclick="showNav()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div id="items">
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+            <div class="content">
+                <h4><strong>2</strong> - Criar 2 combo boxes e preenche-los com numeros pares de 1 a 50 no primeiro, 
+                    e impares de 50 a 100 no segundo</h4>
+                <hr/>
+                <div class="combo-box">
+                    <select id="pares">
+                    </select>
+                    <select id="impares">
+                    </select>
+                    <button onclick="generateNumbers()">Gerar números</button>
+                </div>
+                <h4><strong>3</strong> - Criar um combo para selecionar o estado (3 estados) e depois mostrar as cidades do estado selecionado (3 cidades)</h4>
+                <hr/>
+                <div class="combo-box">
+                    <select id="estados" onchange="renderOptions()">
+                        <option value="NA">Selecione</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </select>
+                    <select id="cidades">
+                    </select>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

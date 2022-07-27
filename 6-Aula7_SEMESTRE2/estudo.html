@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html><!-- html tag que cria a pagina -->
+
+    <head><!-- head é o cabecario da pagina -->
+        <title>Estudo></title><!-- title define o titulo da pagina -->
+    </head>
+
+    <body><!-- body corpo da pagina -->
+        <font color="#0028db"><!-- font tag para controlar a fonte --> 
+            <h1 align="center">Estudo Dirigido</h1>
+        </font>
+
+        <div style="background-color:#25efd0"> <!-- div divisoria de tags -->
+            <table align="center" border = 'black'>
+                
+                <thead> <!-- thead define o cabecario da tabela -->
+                    <tr>
+                        <th>Coluna 1</th> <!-- th define a celula do cabecario  -->
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                    </tr>
+                </thead>
+
+                <tfoot> <!-- tfoot define o rodape da tabela -->
+                    <tr>
+                        <!-- colspan informa quantas colunas sao mescladas -->
+                        <td colspan="3">atualizacao 23-02-22</td>
+                    </tr>
+                </tfoot>
+
+                <tr> <!-- tr insercao de linha na tabela -->
+                    <td>Texto: <input type="text"></td> <!-- td inseri a celula na tabela -->
+                    <td>Email: <input type="email"></td>
+                    <!-- rowspan mescla as linhas somente para baixo -->
+                    <td rowspan="8" align="center">Mesclar linhas</td>
+                </tr>
+                <tr>
+                    <td>Data: <input type="date"></td>
+                    <td>Cor: <input type="color"></td>
+                </tr>
+                <tr>
+                    <td>Pagina: <input type="page"></td>
+                    <td>CheckBox: <input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Radio: <input type="radio"></td>
+                    <td>Datetime: <input type="datetime"></td>
+                </tr>
+                <tr>
+                    <td>Pesquisa: <input type="search"></td>
+                    <td>Tempo: <input type="time"></td>
+                </tr>
+                <tr>
+                    <td>Semana: <input type="week"></td>
+                    <td>Senha: <input type="password" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">Mesclar colunas</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><img src="./img/bird.jfif"></td> <!-- img para inserir imagem -->
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">Seletor
+                        <select id="seletor"> <!-- select cria um seletor -->
+                            <option value="opcao1">Opcao 1</option> <!-- option inclui a opcao do seletor -->
+                            <option value="opcao2">Opcao 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center"><textarea id="Comentario">Comentario</textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3"  align="center"><button id="enviar">Enviar</button></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#f7f7f7">Mudanca de cor</td> <!-- bgcolor muda a cor do fundo -->
+                </tr>
+                <tr>
+            </table>
+        </div>
+
+        <br/> <!-- QUEBRA DE LINHA -->
+        
+        <div>
+            <label for="dog">dog</label> <!-- label cria rotulos -->
+            <img src="./img/imgdog/dog.jfif" height="300px" width="300px">
+        </div>
+    </body>
+</html>

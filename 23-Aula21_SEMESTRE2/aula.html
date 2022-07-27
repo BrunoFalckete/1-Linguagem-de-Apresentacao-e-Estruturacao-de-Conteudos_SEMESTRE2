@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+
+        function soma(x, y){
+            return x + y
+        }
+
+        function quadrado(x){
+            return Math.pow(x, 2)
+        }
+
+        var result2 = quadrado(10)
+
+        var result = soma(2, 5)
+
+        console.log(result)
+
+        console.log(result2)
+
+        // Metodos = funcoes dentro de um objeto
+            var conta = {
+                saldo: 0,
+                deposita : function(x){
+                    this.saldo += x
+                }
+            }
+
+            conta.deposita(100)
+            console.log(conta.saldo)
+
+            conta.deposita(150)
+            console.log(conta.saldo)
+            
+
+            //ISTO DEVE SER EVITADO (ACESSO DIRETO OBJETO DEIXA MARGEM PARA ERROS)
+            conta.saldo = 150
+            console.log(conta.saldo)
+
+
+            var soma = function(){
+                var soma = 0
+
+                for(var i = 0; i < arguments.length; i++){
+                    soma += arguments[i]
+                }
+
+                return soma
+            }
+
+            var result3 = soma(2, 4, 6, 7,5)
+
+            console.log(result3)
+
+    </script> 
+</body>
+</html>

@@ -1,0 +1,38 @@
+p{
+    font-size: 12px;
+    color: red;
+}
+
+/* # busca tag por id */
+#p1{
+    font-size: 20px;
+    border: solid 2px blue;
+}
+
+#p2{
+    font-size: 20px;
+    border: solid 2px  green;
+}
+
+#p3{
+    font-size: 20px;
+    border: solid 2px  yellow;
+}
+
+#p4{
+    font-size: 20px;
+    border: solid 2px  purple;
+}
+
+/* . busca tag pela class */
+.login{
+    background: orange;
+    width: 500px;
+    height: 500px;
+    color: #fff;
+}
+
+input{
+    background: grey;
+    padding: 10px;
+}

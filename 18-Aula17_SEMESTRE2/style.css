@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    background: #333333;
+    border: 1px solid black;
+    padding: 15px;
+    grid-template-columns: 100px 150px 200px;
+    grid-template-rows: 250px 100px 30px;
+}
+
+.container div{
+    background: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Brasil</title> <!-- TITULO DA PAGINA -->
+    </head>
+
+    <body bgcolor="#beeae3"> <!-- BODY CORPO DO SITE, BGCOLOR DEFINE A COR -->
+
+        <div align="center"> <!-- DIV - DIVISORIA DE TAGS -->
+            <font color="#0006c2"> <!-- DEFININDO COR DA FONTE -->
+                <h1>Estados do Brasil</h1> <!-- TITULO -->
+            </font>
+            <img src="./img/geral.png" alt="brasil" height="400px" width="400px"> <!-- INSERCAO DE IMAGEM -->
+        </div>
+        <br/> <!-- QUEBRA DE LINHA -->
+
+        <table align="center" style="border: 1px solid; background-color: #0006c2; color: #FFF;"> 
+            <!-- TABLE - TABELA CENTRALIZADA COM ESTILO DE BORDA E COR NA TABELA E FONTE  -->
+            <tr>
+                <div style="display: flex; height:20px;"> <!-- DISPLAY FLEX- COLOCA TUDO NA MESMA LINHA -->
+                    <td style="border: 1px solid"> <!-- TD - COLUNA DA TABELA -->
+                        <label for="Estados: ">Estados</label> <!-- DESCRICAO CAMPO DO FORMULARIO -->
+                        <select id="estados"> <!-- SELETOR DOS ESTADOS -->
+                            <option value="Acre"> Acre - AC</option> <!-- OPCOES DE ESTADOS -->
+                            <option value="Alagoas">Alagoas - AL</option>
+                            <option value="Amapa">Amapa - Ap</option>
+                            <option value="Amazonas">Amazonas - AM</option>
+                            <option value="Bahia">Bahia - BA</option>
+                            <option value="Ceara">Ceara - CE</option>
+                            <option value="Espirito Santo">Espirito Santo - ES</option>
+                            <option value="Goias">Goias - GO</option>
+                            <option value="Maranhao">Maranhao - MA</option>
+                            <option value="Mato Grosso">Mato Grosso - MT</option>
+                            <option value="Mato Grosso do Sul">Mato Grosso do Sul - MS</option>
+                            <option value="Minas Gerais">Minas Gerais - MG</option>
+                            <option value="Para">Para - PA</option>
+                            <option value="Paraiba">Paraiba - PB</option>
+                            <option value="Pernanbuco">Pernanbuco - PE</option>
+                            <option value="Parana">Parana - PR</option>
+                            <option value="Piaui">Piaui - PI</option>
+                            <option value="Rio de Janeiro">Rio de Janeiro - RJ</option>
+                            <option value="Rio Grande do Norte">Rio Grabde do Norte - RN</option>
+                            <option value="Rio Grande do Sul">Rio Grande do Sul - RS</option>
+                            <option value="Rondonia">Rondonia - RO</option>
+                            <option value="Roraima">Roraima - RR</option>
+                            <option value="Santa Catarina">Santa Catarina - SC</option>
+                            <option value="Sao Paulo">Sao Paulo - SP</option>
+                            <option value="Sergipe">Sergipe - SE</option>
+                            <option value="Tocantins">Tocantins - TO</option>
+                            <option value="Distrito Federal">Distrito Federal - DF</option>
+                        </select>
+                    </td>
+
+                    <td style="border: 1px solid">
+                        <label for="Cidades: ">Cidades</label>
+                        <select id="cidades">
+                            <option value="Acre"> Acrelândia - AC</option>
+                            <option value="Acre"> Assis Brasil - AC</option>
+
+                            <option value="Alagoas">Água Branca - AL</option>
+                            <option value="Alagoas">Anadia - AL</option>
+
+                            <option value="Amapa">Amapá - Ap</option>
+                            <option value="Amapa">Calçoene - Ap</option>
+
+                            <option value="Amazonas">Alvarães - AM</option>
+                            <option value="Amazonas">Amaturá - AM</option>
+
+                            <option value="Bahia">Abaíra - BA</option>
+                            <option value="Bahia">Abaré - BA</option>
+
+                            <option value="Ceara">Abaiara - CE</option>
+                            <option value="Ceara">Acarapé - CE</option>
+
+                            <option value="Espirito Santo">Afonso Cláudio - ES</option>
+                            <option value="Espirito Santo">Água Doce do Norte - ES</option>
+
+                            <option value="Goias">Abadia de Goiás - GO</option>
+                            <option value="Goias">Abadiânia - GO</option>
+
+                            <option value="Maranhao">Açailândia - MA</option>
+                            <option value="Maranhao">Afonso Cunha - MA</option>
+
+                            <option value="Mato Grosso">Acorizal - MT</option>
+                            <option value="Mato Grosso">Água Boa - MT</option>
+
+                            <option value="Mato Grosso do Sul">Água Clara - MS</option>
+                            <option value="Mato Grosso do Sul">Três Lagoas - MS</option>
+
+                            <option value="Minas Gerais">Abadia dos Dourados - MG</option>
+                            <option value="Minas Gerais">Abaeté - MG</option>
+
+                            <option value="Para">Abaetetuba - PA</option>
+                            <option value="Para">Abel Figueiredo - PA</option>
+
+                            <option value="Paraiba">Água Branca - PB</option>
+                            <option value="Paraiba">Aguiar - PB</option>
+
+                            <option value="Pernanbuco">Abreu e Lima - PE</option>
+                            <option value="Pernanbuco">Afogados da Ingazeira - PE</option>
+
+                            <option value="Parana">Abatiá - PR</option>
+                            <option value="Parana">Adrianópolis - PR</option>
+
+                            <option value="Piaui">Acauã - PI</option>
+                            <option value="Piaui">Agricolândia - PI</option>
+
+                            <option value="Rio de Janeiro">Angra dos Reis - RJ</option>
+                            <option value="Rio de Janeiro">Aperibé - RJ</option>
+
+                            <option value="Rio Grande do Norte">Acari - RN</option>
+                            <option value="Rio Grande do Norte">Açu - RN</option>
+
+                            <option value="Rio Grande do Sul">Aceguá - RS</option>
+                            <option value="Rio Grande do Sul">Água Santa - RS</option>
+
+                            <option value="Rondonia">Alta Floresta d'Oeste - RO</option>
+                            <option value="Rondonia">Alto Alegre do Parecis - RO</option>
+
+                            <option value="Roraima">Alto Alegre - RR</option>
+                            <option value="Roraima">Amajari - RR</option>
+
+                            <option value="Santa Catarina">Abdon Batista - SC</option>
+                            <option value="Santa Catarina">Abelardo Luz - SC</option>
+
+                            <option value="Sao Paulo">Adamantina - SP</option>
+                            <option value="Sao Paulo">Adolfo - SP</option>
+
+                            <option value="Sergipe">Amparo de São Francisco - SE</option>
+                            <option value="Sergipe">Aquidabã - SE</option>
+
+                            <option value="Tocantins">Abreulândia - TO</option>
+                            <option value="Tocantins">Aguiarnópolis - TO</option>
+
+                            <option value="Distrito Federal">Brasilia - DF</option>
+                        </select>
+                    </td>
+                </div>
+            </tr>
+        </table>
+    </body>
+</html>

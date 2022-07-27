@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    background: #333;
+    border: 1px solid red;
+    gap: 5px;
+    grid-template-areas: 
+    'header header header header'
+    'sidebar content content content'
+    'footer footer footer footer';
+}
+
+#header {
+    grid-area: header;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
+#content {
+    grid-area: content;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+.container div {
+    border: 1px solid blue;
+    background: #ccc;
+    padding: 20px;
+}

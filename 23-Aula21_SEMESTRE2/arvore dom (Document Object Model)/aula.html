@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <style>
+        body{
+            background: rgb(84, 84, 255);
+            color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="meuDiv">
+        <h1 id="titulo">Meu DOM</h1>
+        <h3>Testando acesso ao DOM</h3>
+        <p>Eu vou mudar!</p>
+        <h4>Clique Aqui</h4>
+    </div>
+
+    <div class="meuDiv">
+        <h1>Outra Div</h1>
+        <h4>Clique aqui tambem</h4>
+        <h5>Nas ferias, tentar aprender <span>JQUERY</span></h5>
+    </div>
+
+    <script>
+
+        var elemento = window.document.getElementById('titulo')
+
+        var elementos2 = document.getElementsByClassName('meuDiv')
+
+        var elementos3 = document.getElementsByTagName('p')
+
+        //querySelector
+
+        elemento.style.color = 'red'
+        elemento.style.fontSize = '50px'
+
+        elementos3[0].innerHTML = 'Mudei' //Mantem toda a estilizacao
+
+        elemento.innerText = 'Meu Novo Titulo' //Muda tudo
+
+        elementos2[0].style.background = 'green'
+        elementos2[1].style.background = 'yellow'
+    
+        elementos2[1].remove()
+
+        var novo = document.createElement('h1')
+
+        novo.innerHTML = 'Meu segundo titulo'
+
+        elementos2[0].appendChild(novo)
+
+
+    </script>
+
+</body>
+</html>

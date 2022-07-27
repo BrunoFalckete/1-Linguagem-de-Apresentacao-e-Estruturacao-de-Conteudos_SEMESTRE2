@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Aula 8 - CSS DENTRO DO HTML</title>
+
+        <!-- INTERNAL STYLE SHEET -->
+        <style>
+            body {
+                /* BACKGOUND PARA ALTERAR COR FUNDO */
+                background:rgb(140, 70, 189);
+            }
+
+            p {
+                /* TAMANHO DA FONTE */
+                font-size: 12px;
+                /*FONTE EM NEGRITO*/
+                font-weight: bold;
+                /* BORDA */ 
+                border: 4px solid red;
+            }
+
+            div{
+                /* TAMANHO DA FONTE */
+                font-size: 18px;
+                /* BORDA */
+                border: 2px solid blue;
+                /* BACKGOUND PARA ALTERAR COR FUNDO */
+                background: black;
+                /* COR DA FONTE */
+                color: white;
+                /* LARGURA */
+                width: 200px;
+                /* ALTURA */
+                height: 200px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- INLINE Style -->
+        <P style="color: #b81919;">Teste</P>
+        <P style="color: red;">Teste 2</P>
+        <P style="color: rgb(80, 110, 12); border: 1px solid black">Teste 3</P>
+        <!-- margin-left , margin-right , margin-top , margin-bottom controla a margem de cada lado-->
+        <p style="margin: 20px; border: 1px solid black">Teste 4</p>
+
+        <div>
+            Teste
+        </div>
+    </body>
+
+</html>

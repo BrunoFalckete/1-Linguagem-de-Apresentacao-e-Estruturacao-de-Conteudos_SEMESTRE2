@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Exercicio1*/
+.container {
+    display: flex;
+}
+
+.sidenav {
+    background-color: #333;
+    color: white;
+    padding: 10px 5px;
+    width: 45px;
+    height: 100vh;
+}
+
+.navcontainer {
+    display: flex;
+}
+
+#items{
+    display: none;
+    flex-direction: column;
+    background-color: #3e3e3e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#items a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#items a:hover {
+    color: #333;
+    background-color: #f3f3f3;
+}
+
+/*Exercicio 2*/
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 50px 60px;
+}
+
+.content > h4 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.content > hr {
+    margin: 20px 0;
+}
+
+.combo-box{
+    display: flex;
+    justify-content: center;
+}
+
+.combo-box > select {
+    padding: 5px;
+    margin: 0 10px;
+    border: 1px solid #f5f5f5;
+    outline: none;
+    border-radius: 5px;
+}
+
+.combo-box > button {
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+/*Exercicio 3*/

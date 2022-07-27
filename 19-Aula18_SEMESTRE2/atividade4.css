@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    /* background-color: #333; */
+    /* border: 1px solid red; */
+    gap: 5px;
+
+    grid-template-areas:
+        'header header header header header'
+        'content content content content sidebar';
+
+    border: 2px solid red;
+}
+
+.container div {
+    background-color: #ccc;
+    padding: 30px;
+}
+
+.header {
+    grid-area: header;
+    border: 2px solid yellow;
+}
+.content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 2px solid green;
+}
+.sidebar {
+    grid-area: sidebar;
+    border: 2px solid #ff9d00;
+}
+
+.sidebar div {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid purple;
+}
+
+#news {
+    border: 2px solid blue;
+}

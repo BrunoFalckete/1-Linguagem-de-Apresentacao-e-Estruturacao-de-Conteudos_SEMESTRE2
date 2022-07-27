@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* div{
+    border: 1px solid black;
+} */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+}
+
+header{
+    height: 100px;
+    background: grey;
+    width: 100vw;
+}
+
+.box{
+    height: calc(100vh - 100px - 100px - 60px);
+    display: flex;
+    gap: 10px;
+}
+
+nav{
+    background: blue;
+    width: 230px;
+}
+
+article{
+    background: green;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: calc(100vw - 230px - 50px);
+}
+
+.container .box article div{
+    background: red;    
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+footer{
+    height: 100px;
+    background: yellow;
+    width: 100vw;
+}

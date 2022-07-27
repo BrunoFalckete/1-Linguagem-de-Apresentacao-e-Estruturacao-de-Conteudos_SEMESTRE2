@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Java Script</title>
+</head>
+<body>
+    <script>
+            // estudar como depurar códigos em JavaScript
+
+            // js não é tipado (var nome = valor) - não precisa definir o tipo da variável
+
+            // alert('Bem vindo ao meu JavaScript')
+
+            // de início, usar console log para etender o que está acontecendo no código
+            console.log('Bem vindo ao meu console!')
+
+            // declaração de variáveis
+            var idade = 10
+            var nome = 'Leticia'
+            var obrigatorio = false
+
+            console.log(idade)
+
+            var soma = 1 + 2
+
+            // inicializar as variáveis é uma boa prática
+            var x = 0
+
+            // estudar a biblioteca math
+            var a = Math.pow(3, 5)
+            var b = Math.sqrt(9)
+
+            var sobrenome = 'IFMS'
+
+            // concatenando variáveis de texto
+            var nomeCompleto = nome + ' ' + sobrenome
+            console.log(nomeCompleto)
+
+            var num = Math.random() * 50
+
+            console.log(soma % 2)
+
+            // console.log(--num)
+
+            // <condição> ? <caso_verdadeiro> : <caso_falso>
+            // var result = nota >= 7 ? 'aprovado' : 'reprovado'
+
+            if (num > 10) {
+                console.log('um eh maior que 10')
+            } else {
+                console.log('num eh menor que 10')
+            }
+
+            // Estrutura de repetição
+            var cont = 0
+            while (cont < 10) {
+                console.log('Boa noite')
+                cont++
+            }
+
+            for (var i = 0; i < 10; i++){
+                console.log('Bom dia')
+            }
+
+    </script>
+</body>
+</html> 

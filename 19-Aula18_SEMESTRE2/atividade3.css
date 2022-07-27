@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    background-color: #333;
+    border: 1px solid red;
+    gap: 5px;
+
+    grid-template-areas:
+        'header header header header'
+        'aside article article article'
+        'footer footer footer footer';
+}
+
+.container div:not(.image) {
+    background-color: #ccc;
+    height: 80px;
+    border: 1px solid blue;
+}
+
+.image {
+    background-color: #ccc;
+    padding: 30px;
+    border: 1px solid blue;
+}
+
+#header {
+    grid-area: header;
+}
+#aside {
+    grid-area: aside;
+    height: 300px;
+}
+#article {
+    grid-area: article;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+}
+#footer {
+    grid-area: footer;
+}

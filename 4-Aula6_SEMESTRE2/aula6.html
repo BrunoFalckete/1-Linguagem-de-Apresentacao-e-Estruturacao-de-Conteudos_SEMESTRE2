@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Aula 6 HTML - Tabelas</title>
+    </head>
+
+    <body>
+        <table border = 'black'>
+            <!-- thead - define o cabecario -->
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                </tr>
+            </thead>
+            <!-- tfoot - define o rodape -->
+            <tfoot>
+                <tr>
+                    <!-- colspan informa quantas colunas sao mescladas -->
+                    <td colspan="3">atualizacao 23-02-22</td>
+                </tr>
+            </tfoot>
+
+            <tr>
+                <td>ToyoTa</td>
+                <td>Supra</td>
+                <!-- rowspan informa quantas linhas sao mescladasx -->
+                <td rowspan="2">1994</td>
+            </tr>
+
+            <tr>
+                <td>ToyoTa</td>
+                <td>Supra</td>
+            </tr>
+        </table>
+    </body>
+</html>

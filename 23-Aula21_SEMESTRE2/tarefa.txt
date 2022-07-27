@@ -1,0 +1,5 @@
+tarefa:
+
+Criar uma pagina que gere um numero aleatorio:
+	se maior que 7 ele escreve dentro de uma div e muda o backgroud verde
+	se menor que 7 ele escreve reprovado dentro de uma dic e muda o background vermelho

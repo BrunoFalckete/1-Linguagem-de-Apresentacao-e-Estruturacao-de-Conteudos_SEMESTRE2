@@ -1,0 +1,960 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+/*DECLARACAO DE VARIAVEIS*/
+:root {
+    --bg-color: #e4e4e4;
+
+    --bg-color-items: #cfcfcf;
+
+    --bg-color-content: #fff;
+
+    --bg-header: #583b7b;
+
+    --bg-navbar: #382d4f;
+
+    --bg-new-member: #4a2d6f;
+
+    --bg-grafico: #403351;
+
+    --text-content-purple: #8365aa;
+
+    --text-content: #888888;
+
+    --text-navbar: #dfdfdf;
+
+    --bg-sucess: #adee66;
+
+    --bg-fail: #ef7f83;
+
+    --bg-notification: #f32930;
+
+    --border-radius: 1.3rem;
+
+    --border-radius-circle: 8rem;
+}
+
+/*DEFININDO O TAMANHO DO SITE*/
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*ZERANDO OS PARAMETROS*/
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+
+/*DEFININDO OS TAMANOS DE FONTES*/
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--text-content-purple);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-content-purple);
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-content);
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-content-purple);
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-content);
+}
+
+/*ESTILO GERAL*/
+.container {
+    background: var(--bg-color);
+    display: grid;
+    grid-template-areas: 
+    'navbar header'
+    'navbar content';
+    grid-template-columns: 15vw 1fr;
+    grid-template-rows: 6rem 1fr;
+    height: 100vh;
+}
+
+/*ESTILO CABECARIO*/
+.container header {
+    background: var(--bg-header);
+    display: flex;
+    grid-area: header;
+}
+
+.container header .menu {
+    margin: 0.3rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-navbar);
+}
+
+.container header .menu i {
+    font-size: 1.6rem;
+}
+
+.container header .menu span {
+    font-size: 1.2rem;
+}
+
+.container header .search {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 32rem;
+    background: var(--bg-color);
+    height: 3rem;
+    border-radius: var(--border-radius);
+}
+
+.container header .search input {
+    width: 32rem;
+    height: 3rem;
+    background: transparent;
+}
+
+.container header .search i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+
+.container header .options {
+    display: flex;
+    margin: 1.4rem;
+    width: 33rem;
+    color: var(--text-navbar);
+}
+
+.container header .options .options_1 {
+    margin: 0.3rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container header .options .options_1 span {
+    font-size: 1.2rem;
+}
+
+.container header .bell {
+    margin: 0.3rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-navbar);
+    font-size: 2rem;
+    position: relative;
+}
+
+.container header .bell .notification3 {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    left: 6.5rem;
+    top: 1.1rem;
+    background: var(--bg-notification);
+    display: flex;
+    color: var(--text-content);
+    justify-content: center;
+    border-radius: var(--border-radius-circle)
+}
+
+.container header .user {
+    display: flex;
+    justify-content: flex-end;
+    width: 23rem;
+}
+
+.container header .user .user_1 {
+    margin: 0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 16rem;
+    height: 4rem;
+}
+
+.container header .user .user_1 span {
+    font-size: 1.4rem;
+    color: var(--text-navbar);
+}
+
+.container header .user .user_1 p {
+    color: var(--text-navbar);
+}
+
+.container header .user .user_2 {
+    height: 5rem;
+    width: 5rem;
+    margin: 0.5rem;
+    background: var(--bg-color-items);
+    border-radius: var(--border-radius-circle);
+}
+
+/*ESTILO MENU*/
+.container nav {
+    background: var(--bg-navbar);
+    height: 100vh;
+    grid-area: navbar;
+}
+
+.container nav .menu .lista {
+    padding: 0.5rem;
+    margin-left: 2.3rem;
+    position: relative;
+}
+
+.container nav .menu .lista .notification1 {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 11rem;
+    top: 0.7rem;
+    background: var(--bg-notification);
+    display: flex;
+    color: var(--text-content);
+    justify-content: center;
+    border-radius: var(--border-radius-circle)
+}
+
+.container nav .menu .lista:hover {
+    background: var(--bg-color-content);
+    color: var(--text-content-purple);
+}
+
+.container nav .menu .lista:hover a span {
+    background: var(--bg-color-content);
+    color: var(--text-content-purple);
+}
+
+.container nav .menu a i {
+    color: var(--text-navbar);
+}
+
+.container nav .menu .lista:hover a i {
+    background: var(--bg-color-content);
+    color: var(--text-content-purple);
+}
+
+.container nav .menu a span {
+    color: var(--text-navbar);
+    font-size: 1.3rem;
+}
+
+.container nav .logout {
+    color: var(--text-navbar);
+    height: 3rem;
+    font-size: 1.3rem;
+    align-items: flex-end;
+}
+
+/*ESTILO LOGO*/
+.container nav .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container nav .logo img {
+    margin: 2rem 0;
+    width: 14rem;
+    height: 5rem;
+}
+
+/*ESTILO CONTENT*/
+.container .content {
+    margin: 0 3rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    grid-area: content;
+}
+
+/*ESTILO PRIMEIRA PARTE*/
+.container .content .box1 {
+    height: 27rem;
+    margin-top: 1.1rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.container .content .box1 .block{
+    display: flex;
+}
+
+.container .content .box1 .block .salesreport {
+    background: var(--bg-color-content);
+    width: 70rem;
+    display: flex;
+    border-radius: var(--border-radius);
+}
+
+.container .content .box1 .block .salesreport .grafico {
+    width: 80%;
+    margin: 1.2rem;
+}
+
+.container .content .box1 .block .salesreport .grafico img {
+    height: 20rem;
+    width: 50rem;
+}
+
+.container .content .box1 .block .salesreport2 {
+    background: var(--bg-color-content);
+    width: 17rem;
+    border-radius: var(--border-radius);
+}
+
+.container .content .box1 .block .salesreport2 .item1 {
+    background: var(--bg-color-items);
+    height: 7.4rem;
+    margin: 1rem;
+    border-radius: var(--border-radius);
+    justify-content: center;
+}
+
+.container .content .box1 .block .salesreport2 .item1 h1 {
+    margin-left: 1rem;
+}
+
+.container .content .box1 .block .salesreport2 .item1 h3 {
+    margin-left: 1rem;
+    margin-bottom: -1rem;
+    padding-top: 2rem;
+}
+
+.container .content .box1 .block .menusales {
+    width: 10.7rem;
+    margin-left: 1.5rem;
+}
+
+.container .content .box1 .block .menusales .item2 {
+    background: var(--bg-color-items);
+    height: 3rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content .box1 .block .menusales .item2:hover {
+    background: var(--bg-navbar);
+    color: var(--text-navbar);
+}
+
+.container .content .box1 .topsales {
+    background: var(--bg-color-content);
+    border-radius: var(--border-radius);
+    width: 25rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 3.5rem;
+}
+
+.container .content .box1 .topsales .item3 {
+    margin: 0.2rem;
+    width: 27rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+}
+
+.container .content .box1 .topsales .item3 .circle {
+    background: var(--bg-color-items);
+    height: 4rem;
+    width: 4rem;
+    border-radius: var(--border-radius-circle);
+    justify-content: center;
+}
+
+.container .content .box1 .topsales .item3 .texttopsale {
+    display: flex;
+    flex-direction: column;
+}
+
+/*ESTILO SEGUNDA PARTE*/
+.container .content .box2 {
+    height: 38rem;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.container .content .box2 .members {
+    width: 45rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container .content .box2 .members .members2 {
+    background: var(--bg-color-content);
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 30rem;
+}
+
+.container .content .box2 .members .members2 .item4 {
+    margin: 1rem;
+    width: 45rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .content .box2 .members .members2 .item4 .item4_1 {
+    margin: 0.2rem;
+    padding: 0.5rem;
+    width: 15rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .content .box2 .members .members2 .item4 .item4_1 .iconpositive {
+    font-size: 3rem;
+    color: var(--bg-sucess);
+}
+
+.container .content .box2 .members .members2 .item4 .item4_1 .iconnegative {
+    font-size: 3rem;
+    color: var(--bg-fail);
+}
+
+.container .content .box2 .members .members2 .item4 .item4_1 h1 {
+    padding-left: 2rem;
+}
+
+.container .content .box2 .members .newmembers {
+    background: var(--bg-navbar);
+    border-radius: var(--border-radius);
+    margin-top: 2.2rem;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-navbar);
+}
+
+.container .content .box2 .members .newmembers .item4_2 {
+    display: flex;
+    width: 9rem;
+    height: 5rem;
+    margin: 1rem;
+}
+
+.container .content .box2 .members .newmembers .item4_2 .iconup {
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-circle);
+    background: var(--bg-sucess);
+}
+
+.container .content .box2 .members .newmembers .item4_2 .icondonw {
+    font-size: 3rem;
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-circle);
+    background: var(--bg-fail);
+}
+
+
+.container .content .box2 .ticket {
+    background: var(--bg-color-content);
+    border-radius: var(--border-radius);
+    width: 30rem;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container .content .box2 .ticket h4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container .content .box2 .ticket .notification2 {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 16rem;
+    top: 1.9rem;
+    background: var(--bg-notification);
+    display: flex;
+    color: var(--text-content);
+    justify-content: center;
+    border-radius: var(--border-radius-circle)
+}
+
+.container .content .box2 .ticket .item5 {
+    margin: 0.7rem;
+    width: 28rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .content .box2 .ticket .item5 .item5_1 {
+    height: 6rem;
+    width: 6rem;
+    margin: 1rem;
+    background: var(--bg-color-items);
+    border-radius: var(--border-radius-circle);
+}
+
+.container .content .box2 .ticket .item5 .item5_2 {
+    height: 6rem;
+    width: 25rem;
+
+}
+
+.container .content .box2 .lastest {
+    background: var(--bg-color-content);
+    border-radius: var(--border-radius);
+    width: 28rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container .content .box2 .lastest2 {
+    display: flex;
+}
+
+.container .content .box2 .lastest2 .numero {
+    margin-left: 10rem;
+}
+
+.container .content .box2 .lastest h4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container .content .box2 .lastest .item6 {
+    margin: 0.3rem;
+    width: 30rem;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+}
+
+.container .content .box2 .lastest .item6 .item6_1 {
+    width: 9rem;
+    height: 5rem;
+    margin: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .content .box2 .lastest .item6 .item6_1 h4 {
+    font-size: 1.5rem;
+}
+
+/*ESTILIZANDO CONTEUDO PAGINA USUARIO*/
+.container .content .usuario {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.container .content .usuario .box1-usuario {
+    background: var(--bg-color-content);
+    width: 35rem;
+    height: 40rem;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+.container .content .usuario .box1-usuario h1 {
+    margin-bottom: 3rem;
+}
+
+.container .content .usuario .box1-usuario .funcionalidade li a {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+
+.container .content .usuario .box2-usuario {
+    background: var(--bg-color-content);
+    width: 35rem;
+    height: 40rem;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+.container .content .usuario .box2-usuario h1 {
+    margin-bottom: 3rem;
+}
+
+.container .content .usuario .box2-usuario .dados li {
+    border: solid 1px var(--bg-header);
+    border-radius: var(--border-radius);
+    margin: 1rem;
+}
+
+.container .content .usuario .box2-usuario .dados li a {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.container .content .usuario .box3-usuario {
+    background: var(--bg-color-content);
+    width: 35rem;
+    height: 40rem;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+.container .content .usuario .box3-usuario h1 {
+    margin-bottom: 3rem;
+}
+
+.container .content .usuario .box3-usuario .comentario {
+    width: 30rem;
+    height: 30rem;
+    border: solid 1px var(--bg-header);
+    border-radius: var(--border-radius);
+}
+
+.container .content .usuario .box3-usuario .comentario .texto {
+    width: 100%;
+    height: 100%;
+}
+
+/*ESTILIZANDO CONTEUDO PAGINA INVESTIDOR*/
+.container .content .investidor {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.container .content .investidor .box1-investidor {
+    background: var(--bg-color-content);
+    width: 35rem;
+    height: 40rem;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+.container .content .investidor .box1-investidor h1 {
+    margin-bottom: 3rem;
+}
+
+.container .content .investidor .box1-investidor .segmento li a {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+
+.container .content .investidor .box2-investidor {
+    background: var(--bg-color-content);
+    width: 35rem;
+    height: 40rem;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+.container .content .investidor .box2-investidor h1 {
+    margin-bottom: 3rem;
+}
+
+.container .content .investidor .box2-investidor .dados li {
+    border: solid 1px var(--bg-header);
+    border-radius: var(--border-radius);
+    margin: 1rem;
+}
+
+.container .content .investidor .box2-investidor .dados li a {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.container .content .investidor .box3-investidor {
+    background: var(--bg-color-content);
+    width: 35rem;
+    height: 40rem;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+.container .content .investidor .box3-investidor h1 {
+    margin-bottom: 3rem;
+}
+
+.container .content .investidor .box3-investidor .observacao {
+    width: 30rem;
+    height: 30rem;
+    border: solid 1px var(--bg-header);
+    border-radius: var(--border-radius);
+}
+
+.container .content .investidor .box3-investidor .observacao .texto {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*ESTILIZANDO CONTEUDO PAGINA PRODUTO*/
+.container .content .produto {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.container .content .produto .box-produto {
+    background: var(--bg-color-content);
+    width: 35rem;
+    height: 40rem;
+    padding: 1rem;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+
+.container .content .produto .box-produto h1 {
+    margin-bottom: 3rem;
+}
+
+.container .content .produto .box-produto .dados li {
+    border: solid 1px var(--bg-header);
+    border-radius: var(--border-radius);
+    margin: 1rem;
+}
+
+.container .content .produto .box-produto .dados li a {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+/* IPHONE */
+@media (max-width: 390px) and (max-width: 819px) {
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;   
+    }
+
+    .container .content{
+        background: blue;
+    }
+}
+
+/* IPAD AIR */
+@media (min-width: 820px) and (max-width: 980px){
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    .container header{
+        width: 100vw;
+        height: 10rem;
+    }
+
+    .container header .menu{
+        margin-right: 1rem;
+    }
+
+    .container header .search{
+        margin-top: 3rem;
+    }
+
+    .container header .bell{
+        width: 1rem;
+    }
+
+    .container header .bell .notification3 {
+        left: 1rem;
+        top: 2.5rem;
+    }
+
+    .container header .user{
+        margin-top: 2.5rem;
+    }
+
+    .container nav{
+       display: flex;
+       width: 100vw;
+       height: 10rem;
+       margin-top: -4.2rem;
+   }
+
+    .container nav .menu {
+        display: flex;
+    }
+
+    .container nav .menu .lista .notification1{
+       left: 6rem;
+       top: 3.5rem;
+    }
+
+    .container nav .menu .lista{
+       height: 8rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .container .content{
+        display: flex;
+        width: 100vw;
+        height: 80vh;
+
+    }
+    
+    .container .content .box1{
+        display: block;
+        width: 100%;
+        height: 50%;
+    }
+
+    .container .content .box1 .block {
+        width: 90%;
+        display: flex;
+        margin-left: 4rem;
+    }
+
+    .container .content .box1 .block .menusales{
+        margin-top: 7rem;
+    }
+
+    .container .content .box1 .topsales{
+        width: 80%;
+        height: 40%;
+        display: flex;
+        margin-left: 4rem;
+        margin-top: 4rem;
+        align-items: center;
+    }
+
+    .container .content .box2{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        gap: 1rem;
+    }
+
+    .container .content .box2 .members{
+        width: 40%;
+    }
+
+    .container .content .box2 .members .members2 .item4 {
+        width: 5rem;
+    }
+
+    .container .content .box2 .members .members2 .item4 .item4_1 {
+        width: 9rem;
+    }
+
+    .container .content .box2 .members .newmembers .item4_2 {
+        width: 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .content .box2 .members .newmembers .item4_2 i {
+        width: 2rem;
+    }
+
+    .container .content .box2 .ticket{
+        width: 30%;
+    }
+
+    .container .content .box2 .ticket .item5{
+        width: 25rem;
+    }
+
+    .container .content .box2 .lastest{
+        width: 30%;
+    }
+
+    .container .content .box2 .lastest .item6{
+        width: 25rem;
+    }
+}
